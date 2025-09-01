@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard">
+        <header class="dashboard-header">
+            <h1>CIE</h1>
+            <nav class="main-nav">
+                <a href="dashboard.html" class="active">Painel de Avisos</a>
+                <a href="contacts.html">Gerenciar Contatos</a>
+                <a href="support.html">Suporte</a> </nav>
+            <button id="btnLogout" class="btn-secondary">Sair</button>
+        </header>
+        
+        <main>
+            <h2>Painel de Avisos</h2>
+            <p>Crie e visualize os comunicados para os alunos.</p>
+            
+            <section class="post-creator">
+                <h3>Criar Novo Aviso</h3>
+                <form id="post-form">
+                    <div class="input-group">
+                        <label for="post-title">Título do Aviso</label>
+                        <input type="text" id="post-title" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="post-content">Conteúdo</label>
+                        <textarea id="post-content" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Publicar Aviso</button>
+                </form>
+            </section>
+
+            <section class="post-list">
+                <h3>Avisos Recentes</h3>
+                <div id="posts-container">
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script> </body>
+</html>

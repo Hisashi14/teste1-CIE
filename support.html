@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard">
+        <header class="dashboard-header">
+            <h1>CIE</h1>
+            <nav class="main-nav">
+                <a href="dashboard.html">Painel de Avisos</a>
+                <a href="contacts.html">Gerenciar Contatos</a>
+                <a href="support.html" class="active">Suporte</a>
+            </nav>
+            <button id="btnLogout" class="btn-secondary">Sair</button>
+        </header>
+        
+        <main>
+            <h2>Central de Suporte</h2>
+            <p>Precisa de ajuda? Escolha uma das opções abaixo.</p>
+
+            <section class="support-section">
+                <h3>Chat de Ajuda</h3>
+                <div class="chat-placeholder">
+                    <p><strong>Problema Comum 1: Não consigo fazer login.</strong></p>
+                    <p>Verifique se seu usuário e senha estão corretos. Lembre-se que o acesso para docentes é o e-mail e para alunos é o RM.</p>
+                    <hr>
+                    <p><strong>Problema Comum 2: Meu aviso não foi enviado.</strong></p>
+                    <p>Certifique-se de que o servidor está rodando corretamente e tente novamente.</p>
+                    <p class="chat-info"><em>(Isto é uma simulação. Um chat em tempo real seria implementado aqui.)</em></p>
+                </div>
+            </section>
+
+            <section class="support-section">
+                <h3>Contatos do Suporte</h3>
+                <ul class="contact-list-support">
+                    <li><strong>E-mail:</strong> suporte@cie-escola.com</li>
+                    <li><strong>WhatsApp:</strong> (11) 91234-5678</li>
+                    <li><strong>Equipe Responsável:</strong> Ana, Gabrielli, Gabriele P., Gabriele E., Danielly</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        // Script simples para o botão de logout
+        document.getElementById('btnLogout').addEventListener('click', () => {
+            alert('Você foi desconectado.');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Contatos - CIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard">
+        <header class="dashboard-header">
+            <h1>CIE</h1>
+            <nav class="main-nav">
+                <a href="dashboard.html">Painel de Avisos</a>
+                <a href="contacts.html" class="active">Gerenciar Contatos</a>
+                <a href="support.html">Suporte</a> 
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Gerenciamento de Contatos</h2>
+            <p>Adicione e visualize os contatos dos alunos.</p>
+
+            <section class="contact-form-section">
+                <h3>Adicionar Novo Aluno</h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label for="student-name">Nome do Aluno</label>
+                        <input type="text" id="student-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="student-course">Curso</label>
+                        <input type="text" id="student-course" placeholder="Ex: Administração" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="student-year">Ano</label>
+                        <input type="number" id="student-year" placeholder="Ex: 1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="student-phone">Número de WhatsApp (com DDD)</label>
+                        <input type="text" id="student-phone" placeholder="Ex: 11987654321" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Adicionar Contato</button>
+                </form>
+            </section>
+
+            <section class="contact-list">
+                <h3>Alunos Cadastrados</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Ano</th>
+                            <th>WhatsApp</th>
+                            <th>Ações</th> </tr>
+                    </thead>
+                    <tbody id="contacts-table-body">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="contacts.js"></script>
+</body>
+</html>
